@@ -1,14 +1,14 @@
 import React from 'react'
 import ResumeCard from './ResumeCard'
 
-function Education() {
+function Skills() {
   return (
     <div className='w-full flex justify-between gap-20'>
 
         <div>
           <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-            <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p>
-            <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
+            <p className="text-sm text-designColor tracking-[4px]">Features</p>
+            <h2 className="text-3xl md:text-4xl font-bold">Design Skills</h2>
           </div>
           <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
             <ResumeCard
@@ -35,8 +35,8 @@ function Education() {
 
         <div>
           <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-            <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
-            <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
+            <p className="text-sm text-designColor tracking-[4px]">Features</p>
+            <h2 className="text-3xl md:text-4xl font-bold">Development Skills</h2>
           </div>
           <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
             <ResumeCard
@@ -61,8 +61,7 @@ function Education() {
         </div>
 
     </div>
-      
   )
 }
 
-export default Education
+export default Skills

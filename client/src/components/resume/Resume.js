@@ -1,7 +1,9 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import ResumeCard from './ResumeCard'
 import Education from './Education'
+import Skills from './Skills'
+import Experience from './Experience'
+import Achievements from './Achievements'
 
 function Resume({title,des}) {
   return (
@@ -22,7 +24,10 @@ function Resume({title,des}) {
         </ul>
       </div>
 
-      <Education/>
+      {/* <Education/> */}
+      {/* <Skills/> */}
+      {/* <Experience/> */}
+      <Achievements/>
       
 
       
