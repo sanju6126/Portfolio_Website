@@ -25,10 +25,10 @@ function Resume({title,des}) {
       
       <div>
         <ul className='w-full grid grid-cols-4'>
-          <li className='resumeLi' onClick={()=>setEducationData(true) & setSkillData(false) & setExperienceData(false) & setAchievementData(false)}>Education</li>
-          <li className='resumeLi' onClick={()=>setEducationData(false) & setSkillData(true) & setExperienceData(false) & setAchievementData(false)}>Professional Skills</li>
-          <li className='resumeLi' onClick={()=>setEducationData(false) & setSkillData(false) & setExperienceData(true) & setAchievementData(false)}>Experience</li>
-          <li className='resumeLi' onClick={()=>setEducationData(false) & setSkillData(false) & setExperienceData(false) & setAchievementData(true)}>Achivements</li>
+          <li className={`${educationData ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`} onClick={()=>setEducationData(true) & setSkillData(false) & setExperienceData(false) & setAchievementData(false)}>Education</li>
+          <li className={`${skillData ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`} onClick={()=>setEducationData(false) & setSkillData(true) & setExperienceData(false) & setAchievementData(false)}>Professional Skills</li>
+          <li className={`${experienceData ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`} onClick={()=>setEducationData(false) & setSkillData(false) & setExperienceData(true) & setAchievementData(false)}>Experience</li>
+          <li className={`${achievementData ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`} onClick={()=>setEducationData(false) & setSkillData(false) & setExperienceData(false) & setAchievementData(true)}>Achivements</li>
         </ul>
       </div>
 
